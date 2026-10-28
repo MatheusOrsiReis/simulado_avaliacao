@@ -1,0 +1,32 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 1.3rem;
+}
+
+nav a, button, input{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}   
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+th {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}

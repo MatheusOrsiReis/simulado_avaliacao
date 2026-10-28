@@ -1,0 +1,47 @@
+
+###
+@('http://localhost:3000/funcionario)
+
+### Cadastrar Funcionário
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+    "nome": "Carlos Silva",
+    "email": "carlos@logistica.com",
+    "senha": "123"
+}
+### Cadastrar Motorista
+POST http://localhost:3000/motorista
+Content-Type: application/json
+
+{
+    "nome": "Carlos Silva",
+    "cnh": "111",
+    "cpf": "12345678912",
+    "telefone": "11999999999"
+}
+
+### Cadastrar Carga 
+POST http://localhost:3000/carga
+Content-Type: application/json
+
+{
+    "descricao": "Caixas de eletrônicos",
+    "peso": 850.5,
+    "volume": 12.3,
+    "codRastreio": 100001,
+    "idMotorista": 1
+}
+
+### Apagar Motorista
+DELETE http://localhost:3000/motorista/4
+Content-Type: application/json
+
+### Consultar Motorista
+GET http://localhost:3000/motorista/2
+Content-Type: application/json
+
+### Listar Motorista
+GET http://localhost:3000/motoristas
+Content-Type: application/json
